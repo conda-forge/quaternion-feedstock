@@ -28,6 +28,8 @@ requirements:
     - numpy >=1.13
 
 test:
+  requires:
+    - pytest
   imports:
     - quaternion
   commands:
