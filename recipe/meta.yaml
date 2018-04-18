@@ -1,7 +1,7 @@
 {% set name = "quaternion" %}
 {% set pypiname = "numpy-quaternion" %}
-{% set version = "2018.4.16.17.4.9" %}
-{% set sha256 = "8d9db4a070cd61a7a37aac48406f4bb6d50cbcfaab19e0b6b8233463583eda6a" %}
+{% set version = "2018.4.18.16.18.52" %}
+{% set sha256 = "ac0492de9ab722071dbaf432088841101cb0d186489a42eff63e91a409f89610" %}
 
 package:
   name: {{ name|lower }}
@@ -30,6 +30,8 @@ requirements:
 test:
   imports:
     - quaternion
+  commands:
+    - py.test
 
 about:
   home: https://github.com/moble/quaternion
