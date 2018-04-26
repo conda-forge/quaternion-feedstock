@@ -28,10 +28,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-quaternion-green.svg)](https://anaconda.org/conda-forge/quaternion)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/quaternion.svg)](https://anaconda.org/conda-forge/quaternion)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/quaternion.svg)](https://anaconda.org/conda-forge/quaternion)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/quaternion.svg)](https://anaconda.org/conda-forge/quaternion)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-quaternion-green.svg)](https://anaconda.org/conda-forge/quaternion) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/quaternion.svg)](https://anaconda.org/conda-forge/quaternion) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/quaternion.svg)](https://anaconda.org/conda-forge/quaternion) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/quaternion.svg)](https://anaconda.org/conda-forge/quaternion) |
 
 Installing quaternion
 =====================
