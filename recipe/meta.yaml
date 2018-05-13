@@ -21,11 +21,11 @@ requirements:
   build:
     - python
     - pip
-    - numpy >=1.13
+    - numpy {{ numpy }}
     - toolchain
   run:
     - python
-    - numpy >=1.13
+    - numpy {{ numpy }}
 
 test:
   imports:
