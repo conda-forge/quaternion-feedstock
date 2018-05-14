@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: package_version={{ version }} python -m pip install --no-deps --ignore-installed .           # [not win]
   script: set "package_version={{ version }}" && python -m pip install --no-deps --ignore-installed .  # [win]
 
@@ -21,11 +21,11 @@ requirements:
   build:
     - python
     - pip
-    - numpy {{ numpy }}
+    - numpy >=1.14
     - toolchain
   run:
     - python
-    - numpy {{ numpy }}
+    - numpy >=1.14
 
 test:
   imports:
