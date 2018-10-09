@@ -23,7 +23,7 @@ requirements:
   host:
     - python
     - pip
-    - {{ pin_compatible('numpy', max_pin='x.x') }}
+    - numpy
   run:
     - python
     - {{ pin_compatible('numpy') }}
