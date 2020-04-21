@@ -1,7 +1,7 @@
 {% set name = "quaternion" %}
 {% set pypiname = "numpy-quaternion" %}
-{% set version = "2019.12.11.22.25.52" %}
-{% set sha256 = "21d7bfbc08ad7ba882a05262fc67daf96e9e394fe442d1b62a4b8829259d6688" %}
+{% set version = "2020.4.21.14.53.58" %}
+{% set sha256 = "4027fda144389be042d55076cdb77e2502eb9418ba7006529455a18d3e4feb6c" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: package_version={{ version }} python -m pip install --no-deps --ignore-installed .           # [not win]
+  number: 0
+  script: package_version={{ version }} python -m pip install --no-deps --ignore-installed .  # [not win]
   script: set "package_version={{ version }}" && python -m pip install --no-deps --ignore-installed .  # [win]
 
 requirements:
@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Add built-in support for quaternions to numpy'
+  summary: Add built-in support for quaternions to numpy
   description: |
     This package creates a quaternion type in python, and further enables
     numpy to create and manipulate arrays of quaternions.  The usual
