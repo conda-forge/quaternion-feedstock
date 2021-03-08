@@ -1,7 +1,7 @@
 {% set name = "quaternion" %}
 {% set pypiname = "numpy-quaternion" %}
-{% set version = "2020.9.5.14.42.2" %}
-{% set sha256 = "071c3edb814027f529c8cd78a8bd36aa7326d42bdf1d95d82db790cb356a9fc8" %}
+{% set version = "2021.3.6.15.24.2" %}
+{% set sha256 = "35e23e4e7f1934da859748dff8215dd9ce0f6e992a27be76f8c133273883a92d" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: package_version={{ version }} python -m pip install --no-deps --ignore-installed .  # [not win]
   script: set "package_version={{ version }}" && python -m pip install --no-deps --ignore-installed .  # [win]
 
