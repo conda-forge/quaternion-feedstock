@@ -6,4 +6,4 @@ numpy:
   # - 1.13 # [py<37]  ### THIS DOESN'T WORK
   # - 1.14  ### This is outdated
   - 1.16
-  - 1.19
+  # - 1.19  ### This doesn't work???
