@@ -1,9 +1,0 @@
-numpy:
-  # Numpy version 1.13 introduced an important bug fix that lets quaternion
-  # work correctly.  Moreover, the C-API tends to change, so each version after
-  # 1.13 with a different C-API version should be supported.  Check the version in
-  # https://github.com/numpy/numpy/blob/master/numpy/core/setup_common.py
-  # - 1.13 # [py<37]  ### THIS DOESN'T WORK
-  # - 1.14  ### This is outdated
-  - 1.16
-  # - 1.19  ### This doesn't work???
