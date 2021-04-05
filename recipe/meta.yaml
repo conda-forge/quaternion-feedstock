@@ -1,7 +1,7 @@
 {% set name = "quaternion" %}
 {% set pypiname = "numpy-quaternion" %}
-{% set version = "2021.3.17.16.51.43" %}
-{% set sha256 = "5548b10556b22115fcd6b2979d4abb1aa448e1ad63e1cae10c30f41576ef163c" %}
+{% set version = "2021.4.4.21.44.8" %}
+{% set sha256 = "816052516e371407294ceeabd3c721a5120f8b00cc3734e6c088aa1e8de499d9" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
