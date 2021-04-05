@@ -1,7 +1,7 @@
 {% set name = "quaternion" %}
 {% set pypiname = "numpy-quaternion" %}
-{% set version = "2021.4.4.21.44.8" %}
-{% set sha256 = "816052516e371407294ceeabd3c721a5120f8b00cc3734e6c088aa1e8de499d9" %}
+{% set version = "2021.4.5.14.42.35" %}
+{% set sha256 = "a9571532cc16c433e8a532ebcb18e802a9c4d52c30356be2b13fb27f6655905f" %}
 
 package:
   name: {{ name|lower }}
