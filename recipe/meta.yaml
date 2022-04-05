@@ -14,7 +14,8 @@ source:
 
 build:
   number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-use-pep517 -vv
+  script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [not win]
+  script: del /f pyproject.toml && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [win]
 
 requirements:
   build:
