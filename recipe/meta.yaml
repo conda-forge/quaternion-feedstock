@@ -25,7 +25,7 @@ requirements:
   host:
     - python
     - pip
-    - numpy >=1.13
+    - numpy
   run:
     - python
     - {{ pin_compatible('numpy') }}
