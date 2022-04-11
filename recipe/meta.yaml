@@ -15,7 +15,7 @@ source:
 build:
   skip: True  # [py<38]
   ## Could also try this, and rerender:   skip: True  # [python_impl == 'pypy']
-  number: 2
+  number: 3
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [not win]
   script: del /f pyproject.toml && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [win]
 
