@@ -1,7 +1,7 @@
 {% set name = "quaternion" %}
 {% set pypiname = "numpy-quaternion" %}
-{% set version = "2022.4.1" %}
-{% set sha256 = "88dc0f923ee18e0ccb0321ace311fb17acc3973cd72ff4284bb07f8460fe0b58" %}
+{% set version = "2022.4.2" %}
+{% set sha256 = "d501907cb4a2c7259690c69594cfa80f36cafb67800dcc9054c301a1ca9e01d2" %}
 
 package:
   name: {{ name|lower }}
@@ -13,9 +13,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [py<38]
+  skip: true  # [py<38]
   ## Could also try this, and rerender:   skip: True  # [python_impl == 'pypy']
-  number: 3
+  number: 0
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [not win]
   script: del /f pyproject.toml && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [win]
 
