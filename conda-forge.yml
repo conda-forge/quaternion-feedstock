@@ -6,6 +6,8 @@ conda_forge_output_validation: true
 github:
   branch_name: main
   tooling_branch_name: main
+test_on_native_only: true
 provider:
   win: azure
-test_on_native_only: true
+  linux_aarch64: default
+  linux_ppc64le: default
