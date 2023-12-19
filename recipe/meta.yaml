@@ -1,7 +1,7 @@
 {% set name = "quaternion" %}
 {% set pypiname = "numpy-quaternion" %}
-{% set version = "2023.0.1" %}
-{% set sha256 = "ea3e6ec454c43f97dabfa6b1de44594428c5e19397e3766f3ec0844c74c1d08c" %}
+{% set version = "2023.0.2" %}
+{% set sha256 = "37f73d7f84c645bd9be95cb4862bd900b7f99bd2f801232006dde00641bf2fd7" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ pypiname }}-{{ version }}.tar.gz
-  url: https://www.black-holes.org/numpy-quaternion-2023.0.1.tar.gz
+  url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
