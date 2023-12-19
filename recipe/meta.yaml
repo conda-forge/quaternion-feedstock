@@ -1,7 +1,7 @@
 {% set name = "quaternion" %}
 {% set pypiname = "numpy-quaternion" %}
 {% set version = "2023.0.1" %}
-{% set sha256 = "6eb50c98b84a112e4b7b5f56c55c1b2efe2ab3bc55fe1274804e1415eba89575" %}
+{% set sha256 = "e9270595a7bfa9b3fdaf5cf58f508ce9f79f07202bb192e1b417a1cf2d2fd791" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ pypiname }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
+  url: https://www.dropbox.com/scl/fi/ep04yyazh20csip3apk9e/numpy-quaternion-2023.0.1.tar.gz?rlkey=oxknacxswpf0atiwj3llcxt5s&dl=0
   sha256: {{ sha256 }}
 
 build:
