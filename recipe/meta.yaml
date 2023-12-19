@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ pypiname }}-{{ version }}.tar.gz
-  url: https://www.dropbox.com/scl/fi/ep04yyazh20csip3apk9e/numpy-quaternion-2023.0.1.tar.gz?rlkey=oxknacxswpf0atiwj3llcxt5s&dl=0
+  url: https://www.black-holes.org/numpy-quaternion-2023.0.1.tar.gz
   sha256: {{ sha256 }}
 
 build:
