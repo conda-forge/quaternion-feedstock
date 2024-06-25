@@ -15,7 +15,7 @@ source:
 build:
   skip: true  # [py<38]
   ## Could also try this, and rerender:   skip: True  # [python_impl == 'pypy']
-  number: 0
+  number: 1
   script: /bin/rm -f pyproject.toml && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [not win]
   script: del /f pyproject.toml && {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [win]
 
@@ -32,7 +32,6 @@ requirements:
     - numpy
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
